@@ -4,6 +4,7 @@
     --clr-primary: #1d1d1d; /* Color principal */
     --clr-secondary: #6c757d; /* Color secundario */
     --clr-accent: #0c2a24; /* Color de acento */
+    --clr-accent--light: #09aa8a; /* Color de acento */
     --clr-light: #ffffff;
     --clr-gold: darkkhaki;
     --margin-menu: 120px;
@@ -29,9 +30,20 @@ h1, h2, h3, h4, h5 {
     font-weight: var(--fw-200);
 }
 
+.header {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
 .nav-link {
     font-family: var(--f--menu);
     font-size: .75rem;
+    border-collapse: collapse;
+    transition: all ease 500ms;
+    border-bottom: 2px solid var(--clr-light);
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--clr-accent--light);
 }
 
 .section {
@@ -41,6 +53,10 @@ h1, h2, h3, h4, h5 {
 
 .section--dark {
     background-color: var(--clr-primary);
+}
+
+.section--conocenos {
+    background-color:whitesmoke;
 }
 
 .hr-gold {
@@ -78,7 +94,7 @@ h5 {
 }
 
 .hero-title {
-    max-width: 730px;
+    max-width: 46rem;
 }
 
 .hero-body {
