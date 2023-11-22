@@ -46,6 +46,14 @@ h1, h2, h3, h4, h5 {
     border-bottom: 2px solid var(--clr-accent--light);
 }
 
+.anchor {
+    text-decoration: underline dotted;
+}
+
+.anchor:hover {
+    text-decoration: none;
+}
+
 .section {
     padding-top: 8rem;
     padding-bottom: 8rem;
